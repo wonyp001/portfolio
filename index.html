@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="웹사이트와 랜딩페이지를 디자인합니다. 사용자가 이해하기 쉽고 목적이 분명한 웹 경험을 만듭니다.">
+  <title>Studio — Web Design</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">Studio</a>
+      <nav class="header__nav" aria-label="주요 메뉴">
+        <a href="#work" class="header__link">프로젝트</a>
+        <a href="#services" class="header__link">서비스</a>
+        <a href="#about" class="header__link">소개</a>
+        <a href="#contact" class="header__link header__link--accent">문의</a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav class="mobile-nav__inner" aria-label="모바일 메뉴">
+      <a href="#work" class="mobile-nav__link">프로젝트</a>
+      <a href="#services" class="mobile-nav__link">서비스</a>
+      <a href="#about" class="mobile-nav__link">소개</a>
+      <a href="#contact" class="mobile-nav__link">문의</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <p class="hero__label reveal-text">Freelance Web Designer</p>
+        <h1 class="hero__title">
+          <span class="hero__line reveal-text">웹사이트와</span>
+          <span class="hero__line reveal-text">랜딩페이지를</span>
+          <span class="hero__line reveal-text">디자인합니다.</span>
+        </h1>
+        <p class="hero__sub reveal-text">
+          사용자가 이해하기 쉽고 목적이 분명한 웹 경험을 만듭니다.
+        </p>
+        <div class="hero__actions reveal-text">
+          <a href="#work" class="btn btn--primary">프로젝트 보기</a>
+          <a href="#contact" class="btn btn--outline">크몽 문의하기</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">Selected Work</span>
+          <h2 class="section__title">Featured Projects</h2>
+        </div>
+
+        <div class="work__list">
+
+          <article class="work__item fade-up">
+            <a href="#" class="work__link">
+              <div class="work__image-wrap">
+                <div class="work__image work__image--01">
+                  <div class="work__image-inner"></div>
+                </div>
+              </div>
+              <div class="work__info">
+                <span class="work__number">01</span>
+                <h3 class="work__title">당근 리디자인</h3>
+                <p class="work__desc">중고거래 플랫폼의 사용자 경험을 개선한 UI 리디자인 프로젝트</p>
+                <span class="work__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work__item fade-up">
+            <a href="#" class="work__link">
+              <div class="work__image-wrap">
+                <div class="work__image work__image--02">
+                  <div class="work__image-inner"></div>
+                </div>
+              </div>
+              <div class="work__info">
+                <span class="work__number">02</span>
+                <h3 class="work__title">AI 서비스 랜딩페이지</h3>
+                <p class="work__desc">AI SaaS 제품의 핵심 가치를 전달하는 랜딩페이지 디자인</p>
+                <span class="work__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work__item fade-up">
+            <a href="#" class="work__link">
+              <div class="work__image-wrap">
+                <div class="work__image work__image--03">
+                  <div class="work__image-inner"></div>
+                </div>
+              </div>
+              <div class="work__info">
+                <span class="work__number">03</span>
+                <h3 class="work__title">제주비건 리디자인</h3>
+                <p class="work__desc">브랜드 아이덴티티를 반영한 비건 레스토랑 웹사이트 리디자인</p>
+                <span class="work__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Design Support -->
+    <section class="section visual" id="visual">
+      <div class="container">
+        <div class="section__header fade-up">
+          <h2 class="section__title">운영 디자인</h2>
+          <p class="section__subtitle">웹사이트 운영에 필요한 다양한 디자인 작업</p>
+        </div>
+
+        <div class="visual__grid">
+          <article class="visual__card fade-up">
+            <div class="visual__image visual__image--banner">
+              <div class="visual__image-inner"></div>
+            </div>
+            <h3 class="visual__title">배너 디자인</h3>
+          </article>
+          <article class="visual__card fade-up">
+            <div class="visual__image visual__image--event">
+              <div class="visual__image-inner"></div>
+            </div>
+            <h3 class="visual__title">이벤트 페이지</h3>
+          </article>
+          <article class="visual__card fade-up">
+            <div class="visual__image visual__image--popup">
+              <div class="visual__image-inner"></div>
+            </div>
+            <h3 class="visual__title">팝업 디자인</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">Services</span>
+          <h2 class="section__title">제공 서비스</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="services__card fade-up">
+            <span class="services__index">01</span>
+            <h3 class="services__title">홈페이지 디자인</h3>
+            <p class="services__desc">브랜드에 맞는 맞춤형 홈페이지 UI/UX 디자인</p>
+          </article>
+          <article class="services__card fade-up">
+            <span class="services__index">02</span>
+            <h3 class="services__title">랜딩페이지 제작</h3>
+            <p class="services__desc">전환율을 높이는 목적 중심의 랜딩페이지</p>
+          </article>
+          <article class="services__card fade-up">
+            <span class="services__index">03</span>
+            <h3 class="services__title">리디자인</h3>
+            <p class="services__desc">기존 웹사이트의 사용성과 비주얼 개선</p>
+          </article>
+          <article class="services__card fade-up">
+            <span class="services__index">04</span>
+            <h3 class="services__title">이벤트페이지 디자인</h3>
+            <p class="services__desc">프로모션과 캠페인을 위한 이벤트 페이지</p>
+          </article>
+          <article class="services__card fade-up">
+            <span class="services__index">05</span>
+            <h3 class="services__title">광고 배너 제작</h3>
+            <p class="services__desc">다양한 매체에 최적화된 광고 배너 디자인</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__intro fade-up">
+            <span class="section__label">About</span>
+            <h2 class="section__title">디자인 철학</h2>
+            <p class="about__text">
+              좋은 웹 디자인은 보기 좋은 것을 넘어, 사용자가 원하는 것을
+              빠르게 찾고 행동할 수 있게 만듭니다. 불필요한 요소를 덜어내고
+              본질에 집중하는 것이 저의 디자인 원칙입니다.
+            </p>
+            <p class="about__text">
+              클라이언트의 비즈니스 목표를 이해하고, 그에 맞는 명확한
+              시각적 언어를 구축합니다. 디자인부터 구현까지 일관된
+              품질을 제공합니다.
+            </p>
+          </div>
+          <div class="about__skills fade-up">
+            <h3 class="about__skills-title">Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Figma</li>
+              <li class="skills__item">Photoshop</li>
+              <li class="skills__item">Illustrator</li>
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">GSAP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner fade-up">
+        <h2 class="contact__title">프로젝트를<br>함께 만들어보세요.</h2>
+        <a href="https://kmong.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">크몽 문의하기</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">Studio</span>
+      <p class="footer__copy">&copy; 2026 Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
