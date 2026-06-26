@@ -802,28 +802,22 @@ button {
    Why Work With Me
    ============================================ */
 .why__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
   margin-bottom: var(--space-xl);
+  border-top: 1px solid var(--border);
 }
 
 .why__item {
-  background: var(--bg);
-  padding: var(--space-lg);
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  grid-template-columns: 2.5rem 1fr;
   gap: var(--space-md);
-  align-items: start;
-  transition: background 0.3s var(--ease);
+  align-items: center;
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.3s var(--ease);
 }
 
 .why__item:hover {
-  background: #f0f0f0;
+  border-bottom-color: var(--border-hover);
 }
 
 .why__num {
@@ -831,13 +825,12 @@ button {
   font-weight: 500;
   color: var(--accent);
   letter-spacing: 0.05em;
-  padding-top: 0.2rem;
 }
 
 .why__text {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
   font-weight: 500;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   line-height: 1.5;
   color: var(--text-primary);
 }
@@ -988,10 +981,6 @@ button {
     font-size: 1rem;
     color: rgba(247, 247, 247, 0.25);
     white-space: nowrap;
-  }
-
-  .why__grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .about__skills {
