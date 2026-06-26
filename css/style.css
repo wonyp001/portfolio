@@ -423,15 +423,15 @@ button {
 }
 
 .work__image--01 .work__image-inner {
-  background: linear-gradient(135deg, #FF6B35 0%, #FF8F66 40%, #F7F7F7 100%);
+  background: linear-gradient(160deg, #1a1a1a 0%, #2d2d2d 60%, #3d1f1f 100%);
 }
 
 .work__image--02 .work__image-inner {
-  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8F66 40%, #F7F7F7 100%);
 }
 
 .work__image--03 .work__image-inner {
-  background: linear-gradient(135deg, #2d6a4f 0%, #52b788 50%, #d8f3dc 100%);
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .work__info {
@@ -512,6 +512,38 @@ button {
 
 .work__ext-link:hover {
   color: var(--text-primary);
+}
+
+/* Work badges */
+.work__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.work__badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.625rem;
+  border-radius: 100px;
+  border: 1px solid var(--border-hover);
+  color: var(--text-secondary);
+}
+
+.work__badge--concept {
+  background: var(--text-primary);
+  color: var(--bg);
+  border-color: var(--text-primary);
+}
+
+.work__role-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  font-weight: 400;
 }
 
 .work__arrow {
@@ -709,9 +741,67 @@ button {
 }
 
 /* ============================================
-   Playground
+   Work Process
    ============================================ */
-.playground__grid {
+.process {
+  background: var(--text-primary);
+  color: var(--bg);
+}
+
+.process .section__label {
+  color: rgba(247, 247, 247, 0.5);
+}
+
+.process .section__title {
+  color: var(--bg);
+}
+
+.process .section__subtitle {
+  color: rgba(247, 247, 247, 0.55);
+}
+
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--space-xl);
+}
+
+.process__step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-top: 1px solid rgba(247, 247, 247, 0.1);
+}
+
+.process__step:last-child {
+  border-bottom: 1px solid rgba(247, 247, 247, 0.1);
+}
+
+.process__arrow {
+  display: none;
+}
+
+.process__num {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(247, 247, 247, 0.35);
+  letter-spacing: 0.05em;
+  min-width: 2rem;
+}
+
+.process__name {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--bg);
+}
+
+/* ============================================
+   Why Work With Me
+   ============================================ */
+.why__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1px;
@@ -719,40 +809,37 @@ button {
   border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
+  margin-bottom: var(--space-xl);
 }
 
-.playground__card {
+.why__item {
   background: var(--bg);
-  padding: var(--space-xl) var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  min-height: 200px;
-  transition: background 0.4s var(--ease);
+  padding: var(--space-lg);
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  transition: background 0.3s var(--ease);
 }
 
-.playground__card:hover {
+.why__item:hover {
   background: #f0f0f0;
 }
 
-.playground__tag {
+.why__num {
   font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--accent);
+  letter-spacing: 0.05em;
+  padding-top: 0.2rem;
 }
 
-.playground__title {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.playground__desc {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
+.why__text {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  color: var(--text-primary);
 }
 
 /* ============================================
@@ -860,14 +947,55 @@ button {
     grid-column: 1 / -1;
   }
 
-  .playground__grid {
-    grid-template-columns: repeat(3, 1fr);
+  .process__steps {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: var(--space-sm);
   }
 
-  .about__grid {
-    grid-template-columns: 1.4fr 1fr;
-    gap: var(--space-2xl);
-    align-items: start;
+  .process__step {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 var(--space-md);
+    border: none;
+    flex: 1;
+    min-width: 5rem;
+    text-align: center;
+  }
+
+  .process__step:last-child {
+    border: none;
+  }
+
+  .process__arrow {
+    display: block;
+    width: 1px;
+    height: 1px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .process__arrow::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: rgba(247, 247, 247, 0.25);
+    white-space: nowrap;
+  }
+
+  .why__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__skills {
+    margin-top: var(--space-xl);
   }
 
   .footer__inner {
