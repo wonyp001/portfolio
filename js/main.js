@@ -223,6 +223,20 @@ function initStaggerGrids() {
     },
     once: true,
   });
+
+  ScrollTrigger.batch('.playground__card', {
+    start: 'top 93%',
+    onEnter: (batch) => {
+      gsap.from(batch, {
+        y: 14,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.08,
+        ease: motion.ease,
+      });
+    },
+    once: true,
+  });
 }
 
 function initHoverZoom() {
