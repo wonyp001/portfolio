@@ -423,13 +423,19 @@ button {
 }
 
 .work__image img.work__image-inner {
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  height: 100%;
 }
 
-.work__image--01 .work__image-inner {
-  background: linear-gradient(160deg, #1a1a1a 0%, #2d2d2d 60%, #3d1f1f 100%);
+.work__image--01 img.work__image-inner {
+  background: #000;
 }
+
+.work__image--03 img.work__image-inner {
+  background: linear-gradient(180deg, #0d2218 0%, #1a3a2a 50%, #2a5a3c 100%);
+}
+
 
 .work__image--02 .work__image-inner {
   background: linear-gradient(135deg, #FF6B35 0%, #FF8F66 40%, #F7F7F7 100%);
@@ -469,6 +475,14 @@ button {
 
 .work__link:hover .work__title {
   color: var(--accent);
+}
+
+.work__item:nth-child(1) .work__link:hover .work__title {
+  color: #f5c300;
+}
+
+.work__item:nth-child(3) .work__link:hover .work__title {
+  color: #2a5a3c;
 }
 
 .work__desc {
