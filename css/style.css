@@ -477,6 +477,14 @@ button {
   color: var(--accent);
 }
 
+.work__item:nth-child(1) .work__link:hover .work__title {
+  color: #f5c300;
+}
+
+.work__item:nth-child(3) .work__link:hover .work__title {
+  color: #2a5a3c;
+}
+
 .work__desc {
   font-size: 0.9375rem;
   color: var(--text-secondary);
