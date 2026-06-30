@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initWorkReveal();
   initVisualReveal();
   initStaggerGrids();
+  initProcessReveal();
   initHoverZoom();
 });
 
@@ -218,6 +219,37 @@ function initStaggerGrids() {
         opacity: 0,
         duration: 0.6,
         stagger: 0.06,
+        ease: motion.ease,
+      });
+    },
+    once: true,
+  });
+
+}
+
+function initProcessReveal() {
+  ScrollTrigger.batch('.process__step', {
+    start: 'top 93%',
+    onEnter: (batch) => {
+      gsap.from(batch, {
+        y: 12,
+        opacity: 0,
+        duration: 0.55,
+        stagger: 0.06,
+        ease: motion.ease,
+      });
+    },
+    once: true,
+  });
+
+  ScrollTrigger.batch('.why__item', {
+    start: 'top 93%',
+    onEnter: (batch) => {
+      gsap.from(batch, {
+        y: 12,
+        opacity: 0,
+        duration: 0.55,
+        stagger: 0.05,
         ease: motion.ease,
       });
     },
