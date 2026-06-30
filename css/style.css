@@ -425,6 +425,7 @@ button {
 .work__image img.work__image-inner {
   object-fit: contain;
   display: block;
+  width: 100%;
   height: 100%;
 }
 
@@ -437,8 +438,8 @@ button {
 }
 
 
-.work__image--02 .work__image-inner {
-  background: linear-gradient(135deg, #FF6B35 0%, #FF8F66 40%, #F7F7F7 100%);
+.work__image--02 img.work__image-inner {
+  background: linear-gradient(160deg, #ffffff 0%, #fff6f1 60%, #ffe8db 100%);
 }
 
 .work__image--03 .work__image-inner {
