@@ -426,7 +426,14 @@ button {
   object-fit: contain;
   display: block;
   height: 100%;
-  background: #1a3a2a;
+}
+
+.work__image--01 img.work__image-inner {
+  background: #000;
+}
+
+.work__image--03 img.work__image-inner {
+  background: linear-gradient(180deg, #0d2218 0%, #1a3a2a 50%, #2a5a3c 100%);
 }
 
 
