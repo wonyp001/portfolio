@@ -422,6 +422,11 @@ button {
   height: 100%;
 }
 
+.work__image img.work__image-inner {
+  object-fit: cover;
+  display: block;
+}
+
 .work__image--01 .work__image-inner {
   background: linear-gradient(160deg, #1a1a1a 0%, #2d2d2d 60%, #3d1f1f 100%);
 }
