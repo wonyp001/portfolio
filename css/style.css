@@ -626,6 +626,8 @@ button {
   background: var(--bg);
   padding: var(--space-lg);
   transition: background 0.4s var(--ease);
+  display: flex;
+  flex-direction: column;
 }
 
 .services__card:hover {
@@ -658,7 +660,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
-  margin-top: var(--space-md);
+  margin-top: auto;
+  padding-top: var(--space-md);
 }
 
 .services__tag {
@@ -1014,7 +1017,25 @@ button {
 
   .services__grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
   }
+
+  .services__card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 6;
+  }
+
+  .services__index { grid-row: 1; }
+  .services__title { grid-row: 2; }
+  .services__desc  { grid-row: 3; }
+  .services__note  { grid-row: 4; }
+  .services__deliverables {
+    grid-row: 5;
+    margin-top: var(--space-md);
+    padding-top: 0;
+  }
+  .services__clients { grid-row: 6; }
 
   .services__card:last-child {
     grid-column: auto;
