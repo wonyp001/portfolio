@@ -496,15 +496,15 @@ button {
 
 .work__meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
   align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
   margin-top: var(--space-md);
 }
 
 .work__roles {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: var(--space-xs);
 }
 
@@ -515,6 +515,7 @@ button {
   border: 1px solid var(--border-hover);
   border-radius: 100px;
   color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 .work__ext-links {
@@ -527,6 +528,7 @@ button {
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--text-secondary);
+  white-space: nowrap;
   transition: color 0.3s var(--ease);
 }
 
